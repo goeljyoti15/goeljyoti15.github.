@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register Form</title>
+    <link rel="stylesheet" href="account.css" />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Login/Register</h1>
+      <div class="buttons">
+        <button class="active">Log In</button>
+        <button>Register</button>
+      </div>
+
+      <form id="loginForm" method="post" onsubmit="onLogin(event)">
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Enter Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe" name="rememberMe" />
+          <label for="rememberMe">Remember Password</label>
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+      <form
+        id="registerForm"
+        style="display: none"
+        method="post"
+        onsubmit="onRegister(event)"
+      >
+        <label for="registerUsername">User Id</label>
+        <input
+          type="text"
+          id="registerUsername"
+          name="registerUsername"
+          required
+        />
+        <label for="registerEmail">Email Id</label>
+        <input type="email" id="registerEmail" name="registerEmail" required />
+        <label for="registerPassword">Enter Password</label>
+        <input
+          type="password"
+          id="registerPassword"
+          name="registerPassword"
+          required
+        />
+        <label for="registerConfirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="registerConfirmPassword"
+          name="registerConfirmPassword"
+          required
+        />
+        <div class="remember-me">
+          <input
+            type="checkbox"
+            id="registerRememberMe"
+            name="registerRememberMe"
+          />
+          <label for="registerRememberMe">Remember Password</label>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="account.js"></script>
+  </body>
+</html>

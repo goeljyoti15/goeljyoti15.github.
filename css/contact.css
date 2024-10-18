@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 25vh;
+    width: 100vw;
+    background-color: #DDD0C8; 
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+
+.nav-left ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.nav-left ul a {
+    color: #003366;
+    font-family: "Caudex", serif;
+    padding: 10px 15px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-left ul li {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-left ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;  
+    background-color: #f9f9f9; 
+    padding: 0;
+    margin: 0;
+    z-index: 1000; 
+}
+
+
+.nav-left ul ul li {
+    float: none; 
+    width: 150px; 
+}
+
+
+.nav-left ul li:hover > ul {
+    display: block;  
+}
+
+
+.nav-left ul ul li a {
+    padding: 10px;
+    color: #003366;
+    background-color:  #F5F3E0;
+    text-decoration: none;
+    border-bottom: 2px solid #DDD0C8;
+   
+}
+
+
+
+.nav-left ul ul li a.active :hover {
+    background-color: white;
+}
+
+
+
+.nav-left ul ul {
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #003366; 
+    font-family: "Caudex", serif;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    bottom:0;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #c4a18a;
+    transform: scale(1.05);
+}
+
+
+.logo-container {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 35vw;
+    height: 18vh;
+    
+}
+.nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+  
+    margin-bottom: 70px;
+}
+
+.nav-right img {
+    width: 6vw;
+    height: 4vh;
+    cursor: pointer;
+    bottom:0;
+}
+
+.flex-container2{
+    display: flex;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-container2 img{
+    
+    width: 1400px;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.overlay {
+    position: absolute; 
+    top: 395px; 
+    right: 600px; 
+    width: 400px ;
+    height: 100px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent; 
+    color: white; 
+    text-align: center; 
+}
+
+.overlay h9 {
+    margin: 0; 
+    font-size: 30px; 
+}
+
+.overlay p {
+    margin: 0; 
+    font-size: 20px;
+} 
+
+.form-details form{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+
+}
+
+.form-details{
+    border: 0.5px solid;
+    background-color: rgba(242, 235, 235, 0.431);
+}
+.form-details form span{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+
+h10{
+    font-size :26px;
+    line-height: 35px;
+    padding:20px 0;
+    font-weight: bold;
+    margin-top: 0;
+    
+}
+
+.form-details form input{
+    width:100%;
+    padding:12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border:1px solid #e1e1e1;
+}
+
+.form-details form textarea{
+    width:100%;
+    padding:12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border:1px solid #e1e1e1;
+}
+
+.form-details form button{
+    background-color: #003366;
+    color:white;
+    align-self: center;
+}
+
+button{
+    width:100px;
+    border-radius: 20px;
+    height: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 20vh;
+    width: 100vw;
+    background-color: #DDD0C8; 
+    margin-top: 15px;
+    
+}
+
